@@ -1,0 +1,50 @@
+#.symtab
+Num Value    Size Type  Bind Ndx Name
+ 0. 00000000    0 NOTYP  LOC UND  
+ 1. 00000000    0  SCTN  LOC   1 sekira
+ 2. 00000004    0 NOTYP  LOC   1 ja
+ 3. 00000000    0  SCTN  LOC   3 neka_sekcija
+ 4. 00000014    0 NOTYP  LOC   3 nesdsadto_dsad
+ 5. 000000a8    0 NOTYP GLOB   3 nesto
+ 6. 000000ac    0 NOTYP GLOB   3 nesto2
+ 7. 00000000    0 NOTYP GLOB UND nesto1
+ 8. 00000000    0 NOTYP GLOB UND nesto3
+ 9. 00000000    0 NOTYP GLOB UND nesto4
+#sekira
+00 00 00 01  00 00 00 02
+
+#sekira.literal_pool
+ 0. 00000000
+#neka_sekcija
+00 45 23 01  00 00 00 a8
+00 00 00 00  00 00 00 ac
+00 00 00 14  00 00 00 00
+10 00 00 00  20 00 00 01
+20 00 00 05  30 00 00 02
+31 0e 20 05  32 0f 20 06
+32 0e f0 03  81 e0 1F FC
+93 2e 00 04  40 0e 10 00
+50 0e 10 00  51 0e 10 00
+52 0e 10 00  53 0e 10 00
+60 11 00 00  61 ee 10 00
+62 ee 10 00  63 ee 10 00
+70 ee 10 00  71 ee 10 00
+91 a0 20 02  91 10 20 01
+91 10 20 03  91 20 30 06
+91 30 00 02  91 40 10 05
+91 55 00 00  92 62 00 00
+92 7a 00 ac  92 83 01 f4
+80 02 a0 02  80 02 10 01
+80 02 10 03  80 03 20 06
+80 00 30 02  80 01 40 05
+80 50 50 00  82 20 60 00
+82 a0 70 ac  82 30 81 f4
+90 31 00 00  94 0e 00 00
+93 fe 00 04  93 fe 00 04
+97 0e 00 04  00 00 00 00
+
+#neka_sekcija.literal_pool
+ 0. 00000000
+ 1. 000003e8
+ 2. 00001000
+ 3. 000007d0

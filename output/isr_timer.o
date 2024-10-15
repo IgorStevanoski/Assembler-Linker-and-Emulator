@@ -1,0 +1,9 @@
+#.symtab
+Num Value    Size Type  Bind Ndx Name
+ 0. 00000000    0 NOTYP  LOC UND  
+ 1. 00000000    0  SCTN  LOC   1 isr
+ 2. 00000000    0 NOTYP GLOB   1 isr_timer
+#isr
+93 fe 00 04  
+#isr.literal_pool
+ 0. 00000000

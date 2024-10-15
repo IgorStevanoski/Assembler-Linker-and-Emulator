@@ -1,0 +1,7 @@
+// Ovo radi make nesto
+% bison -d bison.y
+% flex flex.l
+% g++ bison.tab.c lex.yy.c -lfl -o nesto
+
+// Ovo treba u terminalu kad zavrsi make
+% ./nesto

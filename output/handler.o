@@ -1,0 +1,28 @@
+#.symtab
+Num Value    Size Type  Bind Ndx Name
+ 0. 00000000    0 NOTYP  LOC UND  
+ 1. 00000000    0  SCTN  LOC   1 my_handler
+ 2. 00000000    0 NOTYP GLOB   1 handler
+ 3. 00000024    0 NOTYP  LOC   1 finish
+ 4. 00000030    0 NOTYP  LOC   1 handle_timer
+ 5. 00000038    0 NOTYP  LOC   1 handle_terminal
+ 6. 00000040    0 NOTYP  LOC   1 handle_software
+ 7. 00000000    0 NOTYP GLOB UND isr_timer
+ 8. 00000000    0 NOTYP GLOB UND isr_terminal
+ 9. 00000000    0 NOTYP GLOB UND isr_software
+#my_handler
+81 e0 1F FC  81 e0 2F FC
+90 12 00 00  91 20 00 01
+31 01 20 04  91 20 00 02
+31 01 20 05  91 20 00 03
+31 01 20 06  93 2e 00 04
+93 1e 00 04  93 fe 00 04
+97 0e 00 04  20 00 00 07
+30 00 00 03  20 00 00 08
+30 00 00 03  20 00 00 09
+30 00 00 03  
+#my_handler.literal_pool
+ 0. 00000000
+ 1. 00000002
+ 2. 00000003
+ 3. 00000004

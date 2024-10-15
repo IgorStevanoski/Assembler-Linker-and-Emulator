@@ -1,0 +1,24 @@
+#.symtab
+Num Value    Size Type  Bind Ndx Name
+ 0. 00000000    0 NOTYP  LOC UND  
+ 1. 00000000    0  SCTN  LOC   1 math
+ 2. 00000000    0 NOTYP GLOB   1 mathAdd
+ 3. 00000018    0 NOTYP GLOB   1 mathSub
+ 4. 00000030    0 NOTYP GLOB   1 mathMul
+ 5. 00000048    0 NOTYP GLOB   1 mathDiv
+#math
+81 e0 2F FC  92 1e 00 08
+92 2e 00 0c  50 01 20 00
+93 2e 00 04  93 fe 00 04
+81 e0 2F FC  92 1e 00 08
+92 2e 00 0c  51 01 20 00
+93 2e 00 04  93 fe 00 04
+81 e0 2F FC  92 1e 00 08
+92 2e 00 0c  52 01 20 00
+93 2e 00 04  93 fe 00 04
+81 e0 2F FC  92 1e 00 08
+92 2e 00 0c  53 01 20 00
+93 2e 00 04  93 fe 00 04
+
+#math.literal_pool
+ 0. 00000000

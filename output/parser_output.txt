@@ -1,0 +1,58 @@
+Directive: .global Symbols: nesto nesto2
+Directive: .section Section: sekira
+Directive: .word Symbols/Literals: 1 2
+Label: ja
+Directive: .extern Symbols: nesto1 nesto3 nesto4
+Directive: .section Section: neka_sekcija
+Directive: .word Symbols/Literals: 0x12345 nesto 0 nesto2 nesdsadto_dsad
+Directive: .skip Literal: 0x4
+Instruction: int
+Instruction: call Operand: 1000
+Instruction: call Operand: nesto
+Label: nesdsadto_dsad
+Instruction: jmp Operand: 0x1000
+Instruction: beq Operand: %sp %r2 nesto
+Instruction: bgt Operand: %pc %r2 nesto2
+Instruction: bne Operand: %sp %pc 2000
+Instruction: push Operand: %r1
+Instruction: pop Operand: %r2
+Instruction: xchg Operand: %r1 %sp
+Instruction: add Operand: %r1 %sp
+Instruction: sub Operand: %r1 %sp
+Instruction: mul Operand: %r1 %sp
+Instruction: div Operand: %r1 %sp
+Instruction: not Operand: %r1
+Instruction: and Operand: %r1 %sp
+Instruction: or Operand: %r1 %sp
+Instruction: xor Operand: %r1 %sp
+Instruction: shl Operand: %r1 %sp
+Instruction: shr Operand: %r1 %sp
+Instruction: ld Operand: 0x1000 %r10
+Instruction: ld Operand: 1000 %r1
+Instruction: ld Operand: 2000 %r1
+Instruction: ld Operand: nesto2 %r2
+Instruction: ld Operand: $0x1000 %r3
+Instruction: ld Operand: $nesto %r4
+Instruction: ld Operand: %r5 %r5
+Instruction: ld Operand: [ %r2 ] %r6
+Instruction: ld Operand: [ %r10 + nesto2 ] %r7
+Instruction: ld Operand: [ %r3 + 500 ] %r8
+Instruction: st Operand: %r10 0x1000
+Instruction: st Operand: %r1 1000
+Instruction: st Operand: %r1 2000
+Instruction: st Operand: %r2 nesto2
+Instruction: st Operand: %r3 $0x1000
+Instruction: st Operand: %r4 $nesto
+Instruction: st Operand: %r5 %r5
+Instruction: st Operand: %r6 [ %r2 ]
+Instruction: st Operand: %r7 [ %r10 + nesto2 ]
+Instruction: st Operand: %r8 [ %r3 + 500 ]
+Label: nesto
+Instruction: csrrd Operand: %handler %r3
+Label: nesto2
+Instruction: csrwr Operand: %sp %status
+Instruction: ret
+Instruction: iret
+Instruction: halt
+Directive: .end
+Done!!!
